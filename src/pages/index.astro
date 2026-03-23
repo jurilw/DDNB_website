@@ -5,6 +5,9 @@ import ThemeCard from '../components/ThemeCard.astro';
 import TeamMemberCard from '../components/TeamMemberCard.astro';
 import { getCollection } from 'astro:content';
 
+const basePath = import.meta.env.BASE_URL;
+const baseUrl = basePath.endsWith('/') ? basePath : basePath + '/';
+
 // Get content for teasers
 const themes = await getCollection('themes');
 const teamMembers = await getCollection('team');

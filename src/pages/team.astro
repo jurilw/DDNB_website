@@ -3,6 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import TeamMemberCard from '../components/TeamMemberCard.astro';
 import { getCollection } from 'astro:content';
 
+const basePath = import.meta.env.BASE_URL;
+const baseUrl = basePath.endsWith('/') ? basePath : basePath + '/';
+
 const teamMembers = await getCollection('team');
 // Sort by order field (ascending), members without order go to the end
 const sortedTeam = teamMembers.sort((a, b) => {
@@ -49,7 +52,7 @@ const baseUrl = basePath.endsWith('/') ? basePath : basePath + '/';
           
           <div class="relative">
             <img 
-              src="/DDNB_website/assets/team/NasBar.jpg" 
+              src={`${baseUrl}assets/team/NasBar.jpg`} 
               alt="Data-Driven Network Biology Group team photo"
               class="w-full h-96 object-cover rounded-lg shadow-lg"
             />
