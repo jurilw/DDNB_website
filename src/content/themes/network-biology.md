@@ -1,6 +1,6 @@
 ---
 title: "Single-Cell Perturbation Models"
-image: "/hero/network-biology-hero.jpg"
+image: "/hero/perturbation_models_hero.png"
 description: "Developing and benchmarking foundation models for predicting cellular responses to genetic and chemical perturbations."
 order: 2
 ---

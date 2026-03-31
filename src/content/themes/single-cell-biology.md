@@ -1,6 +1,6 @@
 ---
 title: "Single-Cell Transcriptomics & Disease Trajectories"
-image: "/hero/single-cell-hero.jpg"
+image: "/hero/single-cell FM models hero.png"
 description: "Using deep learning to model single-cell gene expression profiles for understanding T cell exhaustion and disease progression."
 order: 1
 ---
